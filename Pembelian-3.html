@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembelian Barang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<style>
+  .a{
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+<div class="a">
+<br><h2>FORM PEMBELIAN BARANG</h2><br>
+<table align="center">
+    <td><label for="nbar">Nama Barang </label></td>
+    <td><select name="nbar"></td>
+    <option value="monitor">Monitor</option>
+    <option value="mouse">Mouse</option>
+    <option value="keyboard">Keyboard</option>
+    <option value="laptop">Laptop</option>
+    <option value="cpu">CPU</option></select>
+</tr><br>
+<tr>
+    <td><label for="jumlah">Jumlah   </label></td>
+    <td><input type="text" id="jumlah" name="jumlah" value=" " size=""><br></td>
+</tr>
+<tr>
+    <td><label for="harga">Harga </label></td>
+    <td><input type="text" id="harga" name="harga" value=" "><br></td>
+</tr>
+<tr>
+    <td><label for="total">Total    </label></td>
+    <td><input type="text" id="total" name="total" value=" "><br></td>
+</tr><br>
+</table> 
+
+<button type="button" class="btn btn-primary btn-secondary">proses</button>
+<button type="button" class="btn btn-primary btn-secondary">reset</button>
+</div><br>
+
+<script>
+  var jumlah = document.getElementById("jumlah").value;
+  var harga;
+  var total = jumlah * harga;
+   document.getElementById("total").innerHTML = total;
+  var nbar = document.getElementById("nbar").value;
+
+  if (nbar == "monitor") {
+    harga = 700000;
+    total = jumlah * harga;
+    document.getElementById("harga").innerHTML = harga;
+    document.getElementById("total").innerHTML = total;
+  } 
+  else if (nbar == "mouse") {
+    harga = 100000;
+    total = jumlah * harga;
+    document.getElementById("harga").innerHTML = harga;
+    document.getElementById("total").innerHTML = total;
+  }   
+  else if (nbar == "keyboard") {
+    harga = 200000;
+    total = jumlah * harga;
+    document.getElementById("harga").innerHTML = harga;
+    document.getElementById("total").innerHTML = total;
+  } 
+  else if (nbar == "laptop") {
+    harga = 6000000;
+    total = jumlah * harga;
+    document.getElementById("harga").innerHTML = harga;
+    document.getElementById("total").innerHTML = total;
+  }   
+  else {
+    harga = 300000;
+    total = jumlah * harga;
+    document.getElementById("harga").innerHTML = harga;
+    document.getElementById("total").innerHTML = total;
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<div class="card text-center">
+  <div class="card-header">
+    <h7 class="font-monospace">mode by claudiaann</h7>
+  </div>
+
+</body>
+</html>
